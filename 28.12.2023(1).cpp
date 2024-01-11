@@ -1,0 +1,538 @@
+﻿#include <iostream>
+using namespace std;
+
+class Person {
+private:
+    string name;
+    string surname;
+    unsigned short height;
+    unsigned short weight;
+    unsigned short hand;
+    unsigned short legs;
+    bool is_hungry;
+    bool is_happy;
+    bool is_angry;
+public:
+    void Sleep()
+    {
+        cout << "I want to sleep..." << "\n";
+    }
+    void Hungry()
+    {
+        cout << "Im so hungry" << "\n";
+    }
+    void Speak()
+    {
+        cout << "I can speak..." << "\n";
+    }
+    void Cook()
+    {
+        cout << "I like it.." << "\n";
+    }
+    void Cry()
+    {
+        cout << "Cry" << "\n";
+    }
+
+    void SetAngry(bool is_angry)
+    {
+        this->is_angry = is_angry;
+    }
+    bool GetAngry() const
+    {
+        return is_angry;
+    }
+    void SetHappy(bool is_happy)
+    {
+        this->is_happy = is_happy;
+    }
+    bool GetHappy() const
+    {
+        return is_happy;
+    }
+    void SetHungry(bool is_hungry)
+    {
+        this->is_hungry = is_hungry;
+    }
+    bool GetHungry() const
+    {
+        return is_hungry;
+    }
+    void SetLegs(unsigned short legs)
+    {
+        this->legs;
+    }
+    unsigned short GetLegs() const
+    {
+        return legs;
+    }
+    void SetHand(unsigned short hand)
+    {
+        this->hand = hand;
+    }
+    unsigned short GetHand() const
+    {
+        return hand;
+    }
+    void SetWeight(unsigned short weight)
+    {
+        this->weight = weight;
+    }
+    unsigned short GetWeight() const
+    {
+        return weight;
+    }
+    void SetName(string name)
+    {
+        this->name = name;
+    }
+    string GetName() const
+    {
+        return name;
+    }
+    void SetSurname(string surname)
+    {
+        this->surname = surname;
+    }
+    string GetSurname() const
+    {
+        return surname;
+    }
+    void SetHeight(unsigned short height)
+    {
+        this->height = height;
+    }
+    unsigned short GetHeight() const
+    {
+        return height;
+    }
+
+
+};
+
+class Cat {
+private:
+    string nickname;
+    bool hungry;
+    bool is_woolly;
+    bool is_happy;
+    bool is_angry;
+    bool is_wakeup;
+public:
+
+    void Sound()
+    {
+        cout << "Sound meow meow meow" << "\n";
+    }
+    void Play()
+    {
+        cout << "Play with me!" << "\n";
+    }
+    void Eat()
+    {
+        cout << "I want to eat meow" << "\n";
+    }
+    void Pee()
+    {
+        cout << "I have to go to the bathroom" << "\n";
+    }
+
+    void SetWakeup(bool is_wakeup)
+    {
+        this->is_wakeup = is_wakeup;
+    }
+    bool GetWakeup() const
+    {
+        return is_wakeup;
+    }
+    void SetAngry(bool is_angry)
+    {
+        this->is_angry = is_angry;
+    }
+    bool GetAngry() const
+    {
+        return is_angry;
+    }
+    void SetHappy(bool is_happy)
+    {
+        this->is_happy = is_happy;
+    }
+    bool GetHappy() const
+    {
+        return is_happy;
+    }
+    void SetWoolly(bool is_woolly)
+    {
+        this->is_woolly = is_woolly;
+    }
+    bool GetWoolly() const
+    {
+        return is_woolly;
+    }
+
+    void SetHungry(bool hungry)
+    {
+        this->hungry = hungry;
+    }
+    bool GetHungry() const
+    {
+        return hungry;
+    }
+    void SetNickname(string nickname)
+    {
+        this->nickname = nickname;
+    }
+    string GetNickname() const
+    {
+        return nickname;
+    }
+    void PersonPlayWithCat(Person& p)
+    {
+        if (is_wakeup == false)
+        {
+            is_wakeup == true;
+        }
+        if (p.GetAngry() == true)
+        {
+            p.SetAngry(false);
+        }
+        if (p.GetHappy() == false)
+        {
+            p.SetHappy(true);
+        }
+        if (is_angry == true)
+        {
+            is_angry = false;
+        }
+        if (is_happy == false)
+        {
+            is_happy = true;
+        }
+    }
+};
+
+class Dog {
+private:
+    string nickname;
+    bool hungry;
+    bool is_happy;
+    bool is_angry;
+    bool is_wakeup;
+public:
+    void Sound()
+    {
+        cout << "Sound gav gav gav" << "\n";
+    }
+    void Play()
+    {
+        cout << "Play with me!" << "\n";
+    }
+    void Eat()
+    {
+        cout << "I want to eat gav" << "\n";
+    }
+    void Pee()
+    {
+        cout << "I need to go outside" << "\n";
+    }
+
+    void SetWakeup(bool is_wakeup)
+    {
+        this->is_wakeup = is_wakeup;
+    }
+    bool GetWakeup() const
+    {
+        return is_wakeup;
+    }
+
+    void SetAngry(bool is_angry)
+    {
+        this->is_angry = is_angry;
+    }
+    bool GetAngry() const
+    {
+        return is_angry;
+    }
+
+    void SetHappy(bool is_happy)
+    {
+        this->is_happy = is_happy;
+    }
+    bool GetHappy() const
+    {
+        return is_happy;
+    }
+    void SetHungry(bool hungry)
+    {
+        this->hungry = hungry;
+    }
+    bool GetHungry() const
+    {
+        return hungry;
+    }
+    void SetNickname(string nickname)
+    {
+        this->nickname = nickname;
+    }
+    string GetNickname() const
+    {
+        return nickname;
+    }
+
+
+
+
+    void DogPlayWithCat(Cat& c)
+    {
+        if (c.GetHappy() == false)
+        {
+            c.SetHappy(true);
+        }
+        if (c.GetAngry() == true);
+        {
+            c.SetAngry(false);
+        }
+        if (is_happy == false)
+        {
+            is_happy = true;
+        }
+        if (is_angry == true)
+        {
+            is_angry == false;
+        }
+    }
+
+};
+
+class Glasses {
+private:
+    string name;
+    string type_of_frame;
+    string type_of_glass;
+    bool short_sighted;
+    bool long_sightedness;
+    bool broke;
+public:
+
+    void Broke()
+    {
+        cout << "If you let me go, I might crash" << "\n";
+    }
+    void Dirty()
+    {
+        cout << "my glass might get dirty" << "\n";
+    }
+    void ImproveEyesight()
+    {
+        cout << "If you've got the right glass, I'll improve your eyesight" << "\n";
+    }
+    void ImpairVision()
+    {
+        cout << "If you've got the wrong glass, I'll make your eyesight worse" << "\n";
+    }
+
+    void SetBroke(bool broke)
+    {
+        this->broke = broke;
+    }
+    bool GetBroke() const
+    {
+        return broke;
+    }
+    void SetLongSightedness(bool long_sightedness)
+    {
+        this->long_sightedness = long_sightedness;
+    }
+    bool GetLongSightedness() const
+    {
+        return long_sightedness;
+    }
+
+    void SetShortSighted(bool short_sighted)
+    {
+        this->short_sighted = short_sighted;
+    }
+    bool GetShortSighted() const
+    {
+        return short_sighted;
+    }
+
+    void SetGlass(string type_of_glass)
+    {
+        this->type_of_glass = type_of_glass;
+    }
+    string GetGlass() const
+    {
+        return type_of_glass;
+    }
+
+    void SetFrame(string type_of_frame)
+    {
+        this->type_of_frame = type_of_frame;
+    }
+    string GetFrame() const
+    {
+        return type_of_frame;
+    }
+    void SetName(string name)
+    {
+        this->name = name;
+    }
+    string GetName() const
+    {
+        return name;
+    }
+    void DogPlayWithGlasses(Dog& d)
+    {
+        if (broke == false)
+        {
+            broke = true;
+        }
+        if (d.GetAngry() == false)
+        {
+            d.SetAngry(true);
+        }
+        if (d.GetHappy() == true)
+        {
+            d.SetHappy(false);
+        }
+    }
+
+    void CatPlayWithGlasses(Cat& c)
+    {
+        if (broke == false)
+        {
+            broke = true;
+        }
+        if (c.GetAngry() == false)
+        {
+            c.SetAngry(true);
+        }
+        if (c.GetHappy() == true)
+        {
+            c.SetHappy(false);
+        }
+    }
+};
+
+class Fridge {
+private:
+    bool on;
+    string brand;
+    string color;
+    unsigned short height;
+    unsigned short width;
+    unsigned short number_of_compartments;
+    unsigned short volume_in_liters;
+    unsigned short maximum_temperature;
+    unsigned short minimum_temperature;
+public:
+    void StoreFood()
+    {
+        cout << "I can store food" << "\n";
+    }
+    void MakeSound()
+    {
+        cout << "I can make a sound" << "\n";
+    }
+    void Freeze()
+    {
+        cout << "I can lower the temperature of food" << "\n";
+    }
+    void ShutDown()
+    {
+        cout << "If the lights go out, so do I(((((" << "\n";
+    }
+    void Stagger()
+    {
+        cout << "If you don't close the freezer tightly, get the mop ready)" << "\n";
+    }
+
+    void SetMinimum(unsigned short minimum_temperature)
+    {
+        this->minimum_temperature = minimum_temperature;
+    }
+    unsigned short GetMinimum() const
+    {
+        return minimum_temperature;
+    }
+    void SetMaxTemp(unsigned short maximum_temperature)
+    {
+        this->maximum_temperature = maximum_temperature;
+    }
+    unsigned short GetMaxTemp() const
+    {
+        return maximum_temperature;
+    }
+    void SetLiter(unsigned short volume_in_liters)
+    {
+        this->volume_in_liters = volume_in_liters;
+    }
+    unsigned short GetLiter() const
+    {
+        return volume_in_liters;
+    }
+    void SetOn(bool on)
+    {
+        this->on = on;
+    }
+    bool GetOn() const
+    {
+        return on;
+    }
+    void SetBrand(string brand)
+    {
+        this->brand = brand;
+    }
+    string GetBrand() const
+    {
+        return brand;
+    }
+    void SetHeight(unsigned short height)
+    {
+        this->height = height;
+    }
+    unsigned short SetHeight() const
+    {
+        return height;
+    }
+    void SetWidth(unsigned short width)
+    {
+        this->width = width;
+    }
+    unsigned short SetWidth() const
+    {
+        return width;
+    }
+    void SetCompartments(unsigned short number_of_compartments)
+    {
+        this->number_of_compartments = number_of_compartments;
+    }
+    unsigned short SetCompartments() const
+    {
+        return number_of_compartments;
+    }
+
+    void PersonOnfridge(Person& p)
+    {
+        if (on == false)
+        {
+            on = true;
+        }
+    }
+};
+
+int main()
+{
+    Person p;
+    Cat c;
+    Dog d;
+    Glasses g;
+    Fridge f;
+
+    c.PersonPlayWithCat(p);
+    d.DogPlayWithCat(c);
+    g.CatPlayWithGlasses(c);
+    g.DogPlayWithGlasses(d);
+    f.PersonOnfridge(p);
+}
